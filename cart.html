@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кошик — Sunflower Gourmet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </span>
+        <span class="logo__text">Sunflower <em>Gourmet</em></span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Головна</a>
+        <a href="shop.html" class="nav__link">Магазин</a>
+        <a href="cart.html" class="nav__cart nav__cart--active">
+          <svg class="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="5" width="16" height="16" rx="2"/>
+            <path d="M9 10a3 3 0 0 0 6 0"/>
+          </svg>
+          Кошик
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="shop">
+    <div class="container">
+      <section class="shop__intro">
+        <p class="eyebrow">Кошик</p>
+        <h1 class="shop__title">Ваше замовлення</h1>
+      </section>
+
+      <!-- Порожній кошик -->
+      <div class="cart-empty" data-cart-empty hidden>
+        <p>У кошику поки нічого немає.</p>
+        <a href="shop.html" class="btn btn--lg">
+          Перейти до магазину
+          <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="cart-layout" data-cart-layout hidden>
+
+        <!-- Товари -->
+        <div class="cart-main">
+          <ul class="cart-list" data-cart-list></ul>
+          <a href="shop.html" class="link-arrow link-arrow--back">
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+            Продовжити покупки
+          </a>
+        </div>
+
+        <!-- Оформлення -->
+        <aside class="checkout">
+          <form class="checkout__form" method="post" data-checkout>
+            <h2 class="checkout__title">Оформлення</h2>
+
+            <label class="field">
+              <span>Ім'я та прізвище</span>
+              <input type="text" name="Ім'я" required autocomplete="name">
+            </label>
+            <label class="field">
+              <span>Телефон</span>
+              <input type="tel" name="Телефон" required autocomplete="tel" placeholder="+380">
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+            <label class="field">
+              <span>Адреса доставки</span>
+              <textarea name="Адреса" rows="2" required placeholder="Місто, відділення Нової пошти або адреса"></textarea>
+            </label>
+            <label class="field">
+              <span>Коментар <em>(необов'язково)</em></span>
+              <textarea name="Коментар" rows="2"></textarea>
+            </label>
+
+            <!-- заповнюються автоматично -->
+            <input type="hidden" name="Замовлення">
+            <input type="hidden" name="Сума">
+            <input type="hidden" name="_subject">
+            <input type="hidden" name="_next">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="summary">
+              <div class="summary__row"><span>Товарів</span><span data-summary-count>0</span></div>
+              <div class="summary__row"><span>Доставка</span><span>за тарифами перевізника</span></div>
+              <div class="summary__row summary__row--total"><span>Разом</span><span data-summary-total>₴0</span></div>
+            </div>
+
+            <button type="submit" class="btn btn--lg btn--block">Оформити замовлення</button>
+            <p class="checkout__note">Після оформлення ми зв'яжемося з вами і надішлемо посилання на оплату через WayForPay.</p>
+          </form>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <span class="logo__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </span>
+            <span class="logo__text">Sunflower <em>Gourmet</em></span>
+          </a>
+          <p class="footer__about">
+            Американський бренд крафтових вареників та східноєвропейської їжі
+            преміумкласу, створений на українських кулінарних традиціях.
+          </p>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Магазин</h4>
+            <a href="index.html">Головна</a>
+            <a href="shop.html">Уся продукція</a>
+          </div>
+          <div class="footer__col">
+            <h4>Доставка</h4>
+            <a href="#">Заморожена продукція</a>
+            <a href="#">Оплата через WayForPay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        © 2026 Sunflower Gourmet. Усі права захищено.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

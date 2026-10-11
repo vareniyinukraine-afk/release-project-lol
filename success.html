@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дякуємо — Sunflower Gourmet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </span>
+        <span class="logo__text">Sunflower <em>Gourmet</em></span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Головна</a>
+        <a href="shop.html" class="nav__link">Магазин</a>
+        <a href="cart.html" class="nav__cart">
+          <svg class="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="5" width="16" height="16" rx="2"/>
+            <path d="M9 10a3 3 0 0 0 6 0"/>
+          </svg>
+          Кошик
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="shop" data-clear-cart>
+    <div class="container">
+      <section class="result">
+        <span class="result__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </span>
+        <p class="eyebrow">Замовлення прийнято</p>
+        <h1 class="shop__title">Дякуємо!</h1>
+        <p class="shop__lead">
+          Ваше замовлення прийнято. Найближчим часом ми зв'яжемося з вами
+          і надішлемо посилання на оплату через WayForPay.
+        </p>
+        <a href="index.html" class="btn btn--lg">На головну</a>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <span class="logo__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </span>
+            <span class="logo__text">Sunflower <em>Gourmet</em></span>
+          </a>
+          <p class="footer__about">
+            Американський бренд крафтових вареників та східноєвропейської їжі
+            преміумкласу, створений на українських кулінарних традиціях.
+          </p>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Магазин</h4>
+            <a href="index.html">Головна</a>
+            <a href="shop.html">Уся продукція</a>
+          </div>
+          <div class="footer__col">
+            <h4>Доставка</h4>
+            <a href="#">Заморожена продукція</a>
+            <a href="#">Оплата через WayForPay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        © 2026 Sunflower Gourmet. Усі права захищено.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

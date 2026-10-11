@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunflower Gourmet — крафтові вареники</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </span>
+        <span class="logo__text">Sunflower <em>Gourmet</em></span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link nav__link--active">Головна</a>
+        <a href="shop.html" class="nav__link">Магазин</a>
+        <a href="cart.html" class="nav__cart">
+          <svg class="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="5" width="16" height="16" rx="2"/>
+            <path d="M9 10a3 3 0 0 0 6 0"/>
+          </svg>
+          Кошик
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__bg" style="background-image: url('images/hero.jpg');"></div>
+      <div class="container hero__content">
+        <span class="hero__badge">Крафтові вареники • з українських традицій</span>
+        <h1 class="hero__title">
+          Смак української кухні, зроблений <em>в Америці</em>
+        </h1>
+        <p class="hero__lead">
+          Sunflower Gourmet — преміальні вареники та голубці ручної ліпки.
+          Рецепти розробив шеф-кухар із відзнакою Мішлен, а ми ліпимо їх
+          вручну — щодня, як у бабці на кухні.
+        </p>
+        <div class="hero__actions">
+          <a href="shop.html" class="btn btn--lg">
+            Перейти до магазину
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#story" class="btn btn--outline btn--lg">Наша історія</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="features">
+      <div class="container features__grid">
+        <div class="feature">
+          <span class="feature__icon">
+            <!-- chef hat -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 9.18 0A4 4 0 0 1 18 13.87V21H6z"/><path d="M6 17h12"/></svg>
+          </span>
+          <h3 class="feature__title">Рецепт шефа з відзнакою Мішлен</h3>
+          <p class="feature__text">Кожна начинка вивірена до грама: тісто на кислому молоці, начинками з локальних фермерських продуктів.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">
+            <!-- wheat -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"/><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/></svg>
+          </span>
+          <h3 class="feature__title">Ліпимо вручну</h3>
+          <p class="feature__text">Ручна формовка і ручне защипування краю — саме так вареники тримають сік і форму під час варіння.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">
+            <!-- snowflake -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2v20M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></svg>
+          </span>
+          <h3 class="feature__title">Заморожені без компромісів</h3>
+          <p class="feature__text">Шокове заморожування одразу після ліплення — жодних консервантів, готові за 4 хвилини.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Products ===== -->
+    <section class="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Фірмові смаки</p>
+            <h2 class="section-title">Наша продукція</h2>
+          </div>
+          <a href="shop.html" class="link-arrow">
+            Уся продукція
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="grid grid--4">
+
+          <article class="card">
+            <div class="card__media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUDgZypOWVbFoBTowhyAh6HdzkjMtnbKzU4nKacZRYEJCu9XFskzXK24&s=10" alt="Класичні вареники з картоплею та смаженою цибулею"></div>
+            <div class="card__body">
+              <h3 class="card__title">Класичні вареники з картоплею та смаженою цибулею</h3>
+              <p class="card__desc">Ті тонко розкатане тісто на кислому молоці, начинка з бебе-картоплі, вершкового масла та золотистої смаженої цибулі.</p>
+              <div class="card__footer">
+                <span class="price">₴289</span>
+                <button class="btn" data-add="potato-onion">
+                  <svg class="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M9 10a3 3 0 0 0 6 0"/></svg>
+                  До кошика
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1z4a_wEJod1yamNjGgg8QpKCb0tq4Q76vV8iW-zxr6g&s=10" alt="Вареники з картоплею та білими грибами"></div>
+            <div class="card__body">
+              <h3 class="card__title">Вареники з картоплею та білими грибами</h3>
+              <p class="card__desc">Начинка з золотистої картоплі, білих грибів і чебрецю, обсмажених на вершковому маслі до карамельного аромату.</p>
+              <div class="card__footer">
+                <span class="price">₴319</span>
+                <button class="btn" data-add="potato-mushroom">
+                  <svg class="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M9 10a3 3 0 0 0 6 0"/></svg>
+                  До кошика
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu3blo0jXqEm4vCS3LPp14s_r6U3ZxCLqNUcReMjEAIA&s=10" alt="Вареники з телятиною та карамелізованою цибулею"></div>
+            <div class="card__body">
+              <h3 class="card__title">Вареники з телятиною та карамелізованою цибулею</h3>
+              <p class="card__desc">Тушкована телятина повільного приготування з лавровим листком і чорним перцем, з карамелізованою цибулею.</p>
+              <div class="card__footer">
+                <span class="price">₴389</span>
+                <button class="btn" data-add="veal-onion">
+                  <svg class="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M9 10a3 3 0 0 0 6 0"/></svg>
+                  До кошика
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUxiDpNIHUsDx9Egw1o5D_88QXW-5C7fUq3xIc2YdhOQ&s=10" alt="Вареники з домашнім сиром та кропом"></div>
+            <div class="card__body">
+              <h3 class="card__title">Вареники з домашнім сиром та кропом</h3>
+              <p class="card__desc">Свіжий фермерський сир із зеленим кропом і жовтком тіста на вершках. Трохи підсолені, ніжні та ситні.</p>
+              <div class="card__footer">
+                <span class="price">₴329</span>
+                <button class="btn" data-add="cheese-dill">
+                  <svg class="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M9 10a3 3 0 0 0 6 0"/></svg>
+                  До кошика
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Story ===== -->
+    <section class="story" id="story">
+      <div class="container story__inner">
+        <div class="story__media">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1rj73H0nYv4epU_Tiv0qsYHd-9E19qvue_1ox48QhVA&s=10" alt="Руки кухаря ліплять вареник">
+        </div>
+        <div class="story__text">
+          <p class="eyebrow eyebrow--gold">Наша історія</p>
+          <h2 class="section-title section-title--light">З сільської кухні — до американського преміуму</h2>
+          <p>
+            Sunflower Gourmet народився з простого переконання: вареники, зліплені
+            руками, не можна замінити конвеєром. Ми починали з невеликої кухні,
+            де відтворювали рецепти українських бабусь — а сьогодні наші вареники
+            та голубці готують за технологією, розробленою шеф-кухарем із
+            відзнакою Мішлен.
+          </p>
+          <p>
+            Соняшник на нашому логотипі — це данина українським полям і символ
+            сонячної, щирої кухні, яку ми привезли до Америки.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2 class="cta__title">Сьогодні — вареники. Затра — традиція.</h2>
+        <p class="cta__text">
+          Оберіть свої фірмові смаки — заморожені пачки приїдуть до вас
+          готовими до 4-хвилинного варіння.
+        </p>
+        <a href="shop.html" class="btn btn--lg">
+          Обрати смаки
+          <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <span class="logo__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </span>
+            <span class="logo__text">Sunflower <em>Gourmet</em></span>
+          </a>
+          <p class="footer__about">
+            Американський бренд крафтових вареників та східноєвропейської їжі
+            преміумкласу, створений на українських кулінарних традиціях.
+          </p>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Магазин</h4>
+            <a href="index.html">Головна</a>
+            <a href="shop.html">Уся продукція</a>
+          </div>
+          <div class="footer__col">
+            <h4>Доставка</h4>
+            <a href="#">Заморожена продукція</a>
+            <a href="#">Оплата через WayForPay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        © 2026 Sunflower Gourmet. Усі права захищено.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
